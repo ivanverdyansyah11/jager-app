@@ -81,24 +81,32 @@ a {
     font-family: var(--poppins-bold);
 }
 
+<<<<<<< HEAD
 .title {
     font-size: 1.675rem;
     font-family: var(--poppins-semibold);
 }
 
+=======
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
 .description {
     font-size: 0.913rem;
     color: rgba(var(--dark-color), 0.62);
 }
 
+<<<<<<< HEAD
 .button-primary,
 .button-outline {
+=======
+.button-primary {
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
     padding: 16px 32px;
     outline: none;
     font-size: 0.913rem;
     background-color: rgba(var(--primary-color), 1);
     border-radius: 2px;
     color: rgba(var(--dark-color), 1);
+<<<<<<< HEAD
     outline: none !important;
     stroke: none !important;
     border: none;
@@ -111,11 +119,14 @@ a {
 
 .button-outline:hover {
     background-color: rgba(var(--dark-color), 0.03);
+=======
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
 }
 
 .button-primary:hover {
     opacity: 0.8;
 }
+<<<<<<< HEAD
 
 form .input-wrapper label {
     font-size: 0.913rem;
@@ -183,6 +194,8 @@ form .button-sosmed {
 form .button-sosmed:hover {
     background-color: rgba(var(--dark-color), 0.03);
 }
+=======
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
 /* END GLOBAL VARIABLE */
 
 
@@ -196,8 +209,12 @@ form .button-sosmed:hover {
     color: rgba(var(--dark-color), 1);
 }
 
+<<<<<<< HEAD
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
+=======
+.navbar .nav-link:hover {
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
     font-family: var(--poppins-bold);
 }
 
@@ -222,6 +239,7 @@ form .button-sosmed:hover {
 section.hero .benefit-list .list {
     font-size: 0.913rem;
 }
+<<<<<<< HEAD
 
 section.hero .wave-image-first {
     position: absolute;
@@ -866,3 +884,6 @@ footer.footer .copyright p {
     color: rgba(var(--dark-color), 0.62);
 }
 /* END FOOTER */
+=======
+/* END SECTION HERO */
+>>>>>>> b052b3cec65460cc03f43a95bf713eebad5ac650
