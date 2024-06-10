@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page | Jager App</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/image/brand/brand-logo.svg" alt="Brand Logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Beranda</a>
+                <a class="nav-link" href="category.html">Kategori</a>
+                <a class="nav-link" href="product.html">Produk</a>
+                <a class="nav-link" href="testimoni.html">Testimoni</a>
+            </div>
+        </div>
+        <div class="navbar-side d-none d-lg-flex align-items-center gap-4">
+            <div class="side-search d-flex align-items-center gap-2">
+                <img src="assets/image/icon/search.svg" alt="Search Icon" width="20">
+                <input type="search" placeholder="Cari.." class="input-navbar">
+            </div>
+            <a href="index-cart.html">
+                <img src="assets/image/icon/cart.svg" alt="Cart Icon" width="20">
+            </a>
+            <button type="button" class="side-profile d-flex align-items-end gap-3" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <p>Login</p>
+                <img src="assets/image/icon/contact.svg" alt="Contact Icon" width="20">
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+
+
+<!-- MODAL LOGIN -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="body-header d-flex flex-column align-items-end justify-content-center text-center" style="margin-bottom: 42px;">
+                    <div class="exit-button d-flex align-items-center justify-content-center" data-bs-dismiss="modal">
+                        <img src="assets/image/icon/exit.svg" alt="Exit Icon" width="20">
+                    </div>
+                    <h4 class="body-title w-100" style="margin-bottom: 8px !important;">Selamat Datang, Silahkan Login</h4>
+                    <p class="body-redirect w-100">Belum Punya Akun? <button type="button" data-bs-toggle="modal" data-bs-target="#registerModal">Buat Disini</button></p>
+                </div>
+                <form class="w-100 form d-flex flex-column gap-4">
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="email" class="w-100">Phone number or email</label>
+                        <input type="email" id="email" class="input" placeholder="Please enter your phone  number or email">
+                    </div>
+                    <div class="input-wrapper d-flex gap-2 flex-column align-items-end">
+                        <label for="password" class="w-100">Password</label>
+                        <input type="password" id="password" class="input w-100" placeholder="Please enter your password">
+                        <a href="" class="link-forget">Forget your password?</a>
+                    </div>
+                    <a href="index-login.html" class="button-primary button-red w-100 text-center">Login</a>
+                    <div class="other-wrapper position-relative text-center w-100">
+                        <div class="other-line"></div>
+                        <p class="other">or</p>
+                    </div>
+                    <div class="button-group w-100 d-flex justify-content-between">
+                        <button type="button" class="button-sosmed d-flex align-items-center gap-2">
+                            <img src="assets/image/social-media/google.svg" alt="Google Icon" width="24">
+                            Google
+                        </button>
+                        <button type="button" class="button-sosmed d-flex align-items-center gap-2">
+                            <img src="assets/image/social-media/facebook.svg" alt="Facebook Icon" width="24">
+                            Facebook
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL LOGIN -->
+
+
+<!-- MODAL REGISTER -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="body-header d-flex flex-column align-items-end justify-content-center text-center" style="margin-bottom: 12px;">
+                    <div class="exit-button d-flex align-items-center justify-content-center" data-bs-dismiss="modal">
+                        <img src="assets/image/icon/exit.svg" alt="Exit Icon" width="20">
+                    </div>
+                    <h4 class="body-title w-100">Buat Akun</h4>
+                </div>
+                <form class="w-100 form d-flex flex-column gap-4">
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="email" class="w-100">Email</label>
+                        <input type="email" id="email" class="input" placeholder="Masukkan Email Anda">
+                    </div>
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="nomor_hp" class="w-100">Nomor Hp</label>
+                        <input type="text" id="nomor_hp" class="input" placeholder="Masukkan Nomor Hp Anda">
+                    </div>
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="username" class="w-100">Username</label>
+                        <input type="text" id="username" class="input" placeholder="Masukkan Username Anda">
+                    </div>
+                    <div class="input-wrapper d-flex gap-2 flex-column align-items-end">
+                        <label for="password" class="w-100">Password</label>
+                        <input type="password" id="password" class="input w-100" placeholder="Please enter your password">
+                    </div>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#loginModal" class="button-primary button-red w-100 text-center">Register</button>
+                    <div class="other-wrapper position-relative text-center w-100">
+                        <div class="other-line"></div>
+                        <p class="other">or</p>
+                    </div>
+                    <div class="button-group w-100 d-flex justify-content-between">
+                        <button type="button" class="button-sosmed d-flex align-items-center gap-2">
+                            <img src="assets/image/social-media/google.svg" alt="Google Icon" width="24">
+                            Google
+                        </button>
+                        <button type="button" class="button-sosmed d-flex align-items-center gap-2">
+                            <img src="assets/image/social-media/facebook.svg" alt="Facebook Icon" width="24">
+                            Facebook
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL REGISTER -->
+
+
+<main>
+    <div class="container">
+        <!-- SECTION HEADER -->
+        <section class="header" id="header" style="margin: 120px 0 80px 0;">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-3">Beranda <span>| Checkout</span></p>
+                    <h2 class="title">Halaman Checkout</h2>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION HEADER -->
+
+
+        <!-- SECTION CHECKOUT -->
+        <section class="checkout" id="checkout" style="margin-bottom: 120px;">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-9 order-2 order-md-1 mt-4 mt-md-0 d-flex flex-column gap-3">
+                    <div class="checkout-item d-flex w-100 justify-content-between align-items-center gap-3">
+                        <div class="exit-button d-flex align-items-center justify-content-center">
+                            <img src="assets/image/icon/exit.svg" alt="Exit Icon" width="20">
+                        </div>
+                        <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image">
+                        <div class="wrapper">
+                            <h6 class="product-name">Floss Roll</h6>
+                            <p class="product-size">15 ml</p>
+                        </div>
+                        <p class="checkout-subtotal">Rp 15.000</p>
+                        <div class="button-wrapper d-flex">
+                            <button type="button" class="d-flex align-items-center justify-content-center">-</button>
+                            <button type="button" class="d-flex align-items-center justify-content-center">1</button>
+                            <button type="button" class="d-flex align-items-center justify-content-center">+</button>
+                        </div>
+                        <p class="checkout-total">Rp 15.000</p>
+                    </div>
+                    <div class="checkout-item d-flex w-100 justify-content-between align-items-center gap-3">
+                        <div class="exit-button d-flex align-items-center justify-content-center">
+                            <img src="assets/image/icon/exit.svg" alt="Exit Icon" width="20">
+                        </div>
+                        <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image">
+                        <div class="wrapper">
+                            <h6 class="product-name">Floss Roll</h6>
+                            <p class="product-size">15 ml</p>
+                        </div>
+                        <p class="checkout-subtotal">Rp 15.000</p>
+                        <div class="button-wrapper d-flex">
+                            <button type="button" class="d-flex align-items-center justify-content-center">-</button>
+                            <button type="button" class="d-flex align-items-center justify-content-center">1</button>
+                            <button type="button" class="d-flex align-items-center justify-content-center">+</button>
+                        </div>
+                        <p class="checkout-total">Rp 15.000</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 order-1 order-md-2">
+                    <div class="card-checkout">
+                        <h2 class="title" style="margin-bottom: 32px !important;">Total Belanja</h2>
+                        <div class="wrapper d-flex flex-column gap-3" style="margin-bottom: 32px !important;">
+                            <div class="wrapper-subtotal w-100 d-flex w-100 align-items-center justify-content-between">
+                                <span>Subtotal</span>
+                                <span>Rp 30.000</span>
+                            </div>
+                            <div class="wrapper-pengiriman d-flex flex-column w-100 gap-2">
+                                <span>Pengiriman</span>
+                                <form class="w-100 form">
+                                    <div class="input-wrapper">
+                                        <select id="pengiriman" class="input w-100">
+                                            <option value="">Gratis Ongkir</option>
+                                            <option value="">Rp. 20.000</option>
+                                            <option value="">Rp. 40.000</option>
+                                            <option value="">Rp. 60.000</option>
+                                            <option value="">Rp. 80.000</option>
+                                            <option value="">Rp. 100.000</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="wrapper-total w-100 d-flex align-items-center justify-content-between">
+                                <span>Total</span>
+                                <span>Rp 30.000</span>
+                            </div>
+                        </div>
+                        <a href="" class="w-100 button-primary text-center">Bayar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION CHECKOUT -->
+    </div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center gap-3 text-center mb-5">
+                <h5>Jager Bakery</h5>
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.</p>
+                <div class="footer-sosmed d-flex gap-2">
+                    <a target="_blank" href="http://facebook.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/facebook.svg" alt="Facebook Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://twitter.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/twitter.svg" alt="Twitter Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://youtube.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/youtube.svg" alt="Youtube Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://instagram.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/instagram.svg" alt="Instagram Icon" width="20">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <div class="copyright">
+                    <p>Copyright Jager Bakery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+
+<!-- SCRIPT JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- END SCRIPT JS -->
+</body>
+</html>
