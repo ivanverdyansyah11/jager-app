@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page | Jager App</title>
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- END STYLE CSS -->
+</head>
+<body>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index-login.html">
+            <img src="assets/image/brand/brand-logo.svg" alt="Brand Logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index-login.html">Beranda</a>
+                <a class="nav-link" href="category-login.html">Kategori</a>
+                <a class="nav-link active" href="product-login.html">Produk</a>
+                <a class="nav-link" href="testimoni-login.html">Testimoni</a>
+            </div>
+        </div>
+        <div class="navbar-side d-none d-lg-flex align-items-center gap-4">
+            <div class="side-search d-flex align-items-center gap-2">
+                <img src="assets/image/icon/search.svg" alt="Search Icon" width="20">
+                <input type="search" placeholder="Cari.." class="input-navbar">
+            </div>
+            <a href="index-cart-login.html">
+                <img src="assets/image/icon/cart.svg" alt="Cart Icon" width="20">
+            </a>
+            <button type="button" class="side-profile d-flex align-items-end gap-3" data-bs-toggle="modal" data-bs-target="#formModal">
+                <p>Hi, Bram</p>
+                <img src="assets/image/icon/contact.svg" alt="Contact Icon" width="20">
+            </button>
+        </div>
+    </div>
+</nav>
+<!-- END NAVBAR -->
+
+
+<!-- MODAL FORM -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #FFF2E1;">
+            <div class="modal-body">
+                <div class="body-header d-flex justify-content-between align-items-center" style="margin-bottom: 12px;">
+                    <h4 class="body-title w-100">Informasi Pengguna</h4>
+                    <button type="button" class="exit-button d-flex align-items-center justify-content-center" data-bs-dismiss="modal">
+                        <img src="assets/image/icon/exit.svg" alt="Exit Icon" width="20">
+                    </button>
+                </div>
+                <form class="w-100 form d-flex flex-column gap-4">
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="nama_lengkap" class="w-100">Nama Lengkap</label>
+                        <input type="text" id="nama_lengkap" class="input" placeholder="Masukkan Nama lengkap anda">
+                    </div>
+                    <div class="input-wrapper d-flex gap-2 flex-column">
+                        <label for="email" class="w-100">Email</label>
+                        <input type="email" id="email" class="input" placeholder="Masukkan Email">
+                    </div>
+                    <button type="button" class="button-primary w-100 text-center" data-bs-toggle="modal" data-bs-target="#liveChatModal">Lanjut</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL FORM -->
+
+
+<!-- MODAL LIVE CHAT -->
+<div class="modal fade modal-live" id="liveChatModal" tabindex="-1" aria-labelledby="liveChatModalLabel" aria-modal="true">
+    <div class="modal-dialog">
+        <div class="modal-content live-chat" style="background-color: #FFF2E1;">
+            <div class="modal-body">
+                <div class="chat-header d-flex gap-2 align-items-center">
+                    <img src="assets/image/testimonial/testimonial-1.jpg" alt="Profile Image" class="profile-image" width="52">
+                    <div class="wrapper">
+                        <p class="header-name">Customer Service</p>
+                        <p class="header-status">Typing....</p>
+                    </div>
+                </div>
+                <div class="chat-body d-flex flex-column gap-3">
+                    <div class="body-message w-100">
+                        <div class="message d-flex align-items-end gap-2">
+                            <img src="assets/image/testimonial/testimonial-1.jpg" alt="Profile Image" class="profile-message-image" width="36">
+                            <div class="message-group d-flex gap-2 flex-column">
+                                <p>For me, you are still the best, whether</p>
+                                <p>Yesterday, how was your holiday, guys?</p>
+                                <p>Crazy very fun in my opinion</p>
+                                <p>It's really really fun guys</p>
+                            </div>
+                        </div>
+                        <p>4 minutes ago</p>
+                    </div>
+                    <div class="body-message w-100 text-end d-flex flex-column align-items-end">
+                        <div class="message d-flex align-items-end gap-2 text-end">
+                            <div class="message-group d-flex gap-2 flex-column text-end align-items-end">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-message" width="200">
+                                <p>Please vote for the best picture in your opinion</p>
+                            </div>
+                            <img src="assets/image/testimonial/testimonial-1.jpg" alt="Profile Image" class="profile-message-image" width="36">
+                        </div>
+                        <p>2 minutes ago</p>
+                    </div>
+                </div>
+                <div class="chat-footer d-flex gap-2 align-items-center">
+                    <div class="input-message position-relative w-100">
+                        <input type="text" placeholder="Type your message here.." class="w-100 input-chat position-relative">
+                        <img src="assets/image/icon/link.svg" alt="Link Icon" width="20">
+                    </div>
+                    <button type="button" class="button-send d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/send.svg" alt="Send Image" width="22">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MODAL LIVE CHAT -->
+
+
+<main>
+    <div class="container">
+        <!-- SECTION HEADER -->
+        <section class="header" id="header" style="margin: 120px 0 80px 0;">
+            <div class="row">
+                <div class="col-12">
+                    <p class="mb-3">Beranda <span>| Produk</span></p>
+                    <h2 class="title">Semua Produk</h2>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION HEADER -->
+
+
+        <!-- SECTION PRODUCT -->
+        <section class="product" id="product" style="margin-bottom: 120px;">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-9 order-2 order-md-1 mt-4 mt-md-0">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="detail-product-login.html" class="card-product d-flex flex-column align-items-center">
+                                <img src="assets/image/product/product-1.png" alt="Product Image" class="product-image" style="margin-bottom: 32px;">
+                                <h6 class="product-title" style="margin-bottom: 8px !important;">Floss Roll</h6>
+                                <p class="product-price" style="margin-bottom: 12px !important;">Rp 15.000</p>
+                                <div class="star-list d-flex gap-1 align-items-center" style="margin-bottom: 42px;">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <img src="assets/image/icon/star.svg" alt="Star Icon" width="16">
+                                    <p>( 990 )</p>
+                                </div>
+                                <button type="button" class="card-button text-center">Pesan Sekarang</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 order-1 order-md-2">
+                    <div class="wrapper d-flex flex-column gap-3 w-100">
+                        <div class="input-search d-flex align-items-center gap-2">
+                            <input type="search" placeholder="Search…" class="input">
+                            <img src="assets/image/icon/search.svg" alt="Search Icon" class="search-icon" width="16">
+                        </div>
+                        <div class="category-list d-flex flex-column gap-2">
+                            <button type="button" class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Kue Tradisional</span>
+                                <span>(5)</span>
+                            </button>
+                            <button type="button" class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Roti</span>
+                                <span>(10)</span>
+                            </button>
+                            <button type="button" class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Pudding</span>
+                                <span>(8)</span>
+                            </button>
+                            <button type="button" class="d-flex w-100 align-items-center justify-content-between">
+                                <span>Kukis</span>
+                                <span>(4)</span>
+                            </button>
+                            <button type="button" class="d-flex w-100 align-items-center justify-content-between">
+                                <span>All</span>
+                                <span>(27)</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION PRODUCT -->
+    </div>
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center gap-3 text-center mb-5">
+                <h5>Jager Bakery</h5>
+                <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual.</p>
+                <div class="footer-sosmed d-flex gap-2">
+                    <a target="_blank" href="http://facebook.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/facebook.svg" alt="Facebook Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://twitter.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/twitter.svg" alt="Twitter Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://youtube.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/youtube.svg" alt="Youtube Icon" width="16">
+                    </a>
+                    <a target="_blank" href="http://instagram.com" class="sosmed-button d-flex align-items-center justify-content-center">
+                        <img src="assets/image/icon/instagram.svg" alt="Instagram Icon" width="20">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <div class="copyright">
+                    <p>Copyright Jager Bakery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+
+
+<!-- SCRIPT JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!-- END SCRIPT JS -->
+</body>
+</html>
