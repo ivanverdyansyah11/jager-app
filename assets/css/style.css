@@ -1,0 +1,139 @@
+/* FONTFACE */
+@font-face {
+    font-family: "poppins-regular";
+    src: url("../font/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins-medium";
+    src: url("../font/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins-semibold";
+    src: url("../font/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins-bold";
+    src: url("../font/Poppins-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins-extrabold";
+    src: url("../font/Poppins-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "poppins-black";
+    src: url("../font/Poppins-Black.ttf") format("truetype");
+}
+/* END FONTFACE */
+
+
+/* ROOT */
+:root {
+    --primary-color: 209, 187, 158;
+    --dark-color: 15, 23, 42;
+    --light-color: 255, 242, 225;
+
+    --poppins-regular: "poppins-regular", Arial, Helvetica, sans-serif;
+    --poppins-medium: "poppins-medium", Arial, Helvetica, sans-serif;
+    --poppins-semibold: "poppins-semibold", Arial, Helvetica, sans-serif;
+    --poppins-bold: "poppins-bold", Arial, Helvetica, sans-serif;
+    --poppins-extrabold: "poppins-extrabold", Arial, Helvetica, sans-serif;
+    --poppins-black: "poppins-black", Arial, Helvetica, sans-serif;
+
+    --transition-duration: 250ms;
+}
+/* END ROOT */
+
+
+/* GLOBAL VARIABLE */
+* {
+    font-family: var(--poppins-medium);
+    transition: var(--transition-duration) !important;
+}
+
+body {
+    background-color: rgba(var(--light-color), 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0 !important;
+    color: rgba(var(--dark-color), 1);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.headline {
+    font-size: 2.125rem;
+    font-family: var(--poppins-bold);
+}
+
+.description {
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 0.62);
+}
+
+.button-primary {
+    padding: 16px 32px;
+    outline: none;
+    font-size: 0.913rem;
+    background-color: rgba(var(--primary-color), 1);
+    border-radius: 2px;
+    color: rgba(var(--dark-color), 1);
+}
+
+.button-primary:hover {
+    opacity: 0.8;
+}
+/* END GLOBAL VARIABLE */
+
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(var(--primary-color), 1) !important;
+}
+
+.navbar .nav-link {
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 1);
+}
+
+.navbar .nav-link:hover {
+    font-family: var(--poppins-bold);
+}
+
+.navbar .side-profile,
+.navbar .input-navbar {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    stroke: none;
+    font-size: 0.913rem;
+    color: rgba(var(--dark-color), 1);
+}
+
+.navbar .side-profile p {
+    font-size: 0.913rem;
+}
+/* END NAVBAR */
+
+
+/* SECTION HERO */
+section.hero .benefit-list .list {
+    font-size: 0.913rem;
+}
+/* END SECTION HERO */
